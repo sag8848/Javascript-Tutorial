@@ -190,3 +190,38 @@ console.log(findingGadget);
 // filter
 let filteredProduct = gadget.filter((gadget)=> gadget.price>=100000);
 console.log(filteredProduct);
+
+
+// more example for map, filter and find
+
+let fruits = [
+    {
+        name: "Apple",
+        season: "Winter",
+        price: 320,
+        producedRegion: "Mustang"
+}, 
+{
+        name: "Banana",
+        season: "all-season",
+        price: 240,
+        producedRegion: "terai"
+}, 
+{
+        name: "Orange",
+        season: "Winter",
+        price: 150,
+        producedRegion: "Gorkha"
+}, 
+{
+        name: "Water-Melon",
+        season: "Summer",
+        price: 180,
+        producedRegion: "Kamala"
+}
+]
+
+// map
+
+let vatAmount = fruits.map((fruits) => fruits.price + (fruits.price *13) / 100);
+console.log(vatAmount);

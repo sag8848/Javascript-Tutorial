@@ -225,3 +225,12 @@ let fruits = [
 
 let vatAmount = fruits.map((fruits) => fruits.price + (fruits.price *13) / 100);
 console.log(vatAmount);
+
+// find
+
+let findFruit = fruits.find((fruits) => fruits.name == "Water-Melon");
+console.log(findFruit);
+
+// filter
+ let filterFruit = fruits.filter((fruits) => fruits.price > 150);
+console.log(filterFruit);

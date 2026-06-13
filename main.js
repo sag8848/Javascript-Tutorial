@@ -259,7 +259,7 @@ console.log(`The sum of two number is ${add}`);
 add(4, 5);
 
 // function with return type
-// one thing to understand here is, we store the value in result and when it is called outside the function by giving another variable name and it is printed with the cosole.log
+// one thing to understand here is, we store the value in result and it is called outside the function by giving another variable name and it is printed with the cosole.log
 
 function multiply (c, d) {
 let result = c * d;
@@ -268,3 +268,29 @@ return result;
 
 let mul = multiply(5, 6);
 console.log(mul);
+
+//  we can see another two function which are 1. arrow function and 2. anonymous function
+
+// arrow function is simply a function which is stored in the variable
+
+let divide = (a, b) => {
+  let result = a/b;
+  console.log(`the result is ${result}`);
+}
+divide(10, 5);
+
+// anonymous function are those function which does not have any sense on their own so it should be stored in the variable to make them printable, storable.
+
+//  simply, () => {} this is anonymous function but to make them sense, we store in the variable which is actually called anonymous arrow function
+
+let greet = () => {
+console.log("Hello World")
+}
+greet();
+
+
+
+
+
+
+

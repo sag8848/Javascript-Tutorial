@@ -234,3 +234,37 @@ console.log(findFruit);
 // filter
  let filterFruit = fruits.filter((fruits) => fruits.price > 150);
 console.log(filterFruit);
+
+
+
+// function 
+
+// there are 3 kinds of function we use in this session.
+
+// 1. function with no parameter
+
+function hello() {
+  console.log("hello "+ "Ram");
+}
+hello();
+
+
+// 2. function with PArameter
+
+function add(a, b) {
+let add = a+b;
+console.log(`The sum of two number is ${add}`);
+}
+
+add(4, 5);
+
+// function with return type
+// one thing to understand here is, we store the value in result and when it is called outside the function by giving another variable name and it is printed with the cosole.log
+
+function multiply (c, d) {
+let result = c * d;
+return result;
+}
+
+let mul = multiply(5, 6);
+console.log(mul);
